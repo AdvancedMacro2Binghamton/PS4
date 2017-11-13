@@ -28,6 +28,3 @@ cols = kron((pol_indx(:) - 1) * m, ones(m,1)) + kron(ones(m*n, 1), (1:m)');
 % vals = repmat([PI(1,:)'; PI(2,:)'], [n, 1]);
 vals = repmat( reshape( permute( PI, [2 1] ), [], 1) , [n, 1]);
 Q = sparse(rows, cols, vals, m*n, m*n);
-
-
-
